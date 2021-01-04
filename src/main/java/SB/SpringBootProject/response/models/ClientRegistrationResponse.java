@@ -1,7 +1,4 @@
-package SB.SpringBootProject.model;
-
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+package SB.SpringBootProject.response.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,15 +12,13 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 
-@Document(collection = "ClientRegistration")
-public class ClientRegistration {
+public class ClientRegistrationResponse {
 
 	private String firstName;
 	private String middleName;
 	private String lastName;
 	private String dob;
 	private String phoneNumber;
-	@Id
 	private String email;
 	private String password;
 }
